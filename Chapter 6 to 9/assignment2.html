@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let x = 2 
+    let y = 1
+    
+    // --a - --b + ++b + b--;
+    // --x = 1
+    // --x - --y // 1 - 0 => 1
+    // --x - --y + ++y // 1 - 0 + 1 => 2
+    //  --x - --y + ++y + y-- // 1 - 0 + 1 + 1 => 3
+    var result = --x - --y + ++y + y--
+    document.write("Result: --x - --y + ++y + y-- : " + result )
+</script>
+</html>

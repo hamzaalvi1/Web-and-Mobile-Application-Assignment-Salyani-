@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<style>
+    th,td{
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+</style>
+<body>
+    
+</body>
+<script>
+
+    let sub1 = prompt("Enter your first subject name", "Javascript")
+    let sub2 = prompt("Enter your second subject name", "Javascript")
+    let sub3 = prompt("Enter your third subject name", "Javascript")
+    let totalMarks = 100
+    let obtainedMarks1 = parseInt(prompt("Enter Your First Subject Marks",0))
+    let obtainedMarks2 = parseInt(prompt("Enter Your Second Subject Marks",0))
+    let obtainedMarks3 = parseInt(prompt("Enter Your Third Subject Marks",0))
+
+    document.write(`<table>
+    <tr>
+    <td>Subjects</td>
+    <td>Total Marks</td>
+    <td>Obtained Marks</td>
+    <td>Percentage</td>
+    </tr>
+    <tr>
+    <td>
+    ${sub1}
+    <td/>
+    <td>
+    ${totalMarks}
+    <td/>
+    <td>
+    ${obtainedMarks1}
+    <td/>
+    <td>
+    ${(obtainedMarks1 / totalMarks) * 100}%
+    <td />
+    </tr>
+    <tr>
+    <td>
+    ${sub2}
+    <td/>
+    <td>
+    ${totalMarks}
+    <td/>
+    <td>
+    ${obtainedMarks2}
+    <td/>
+    <td>
+    ${(obtainedMarks2 / totalMarks) * 100}
+    <td/>
+    </tr>
+    <tr>
+    <td>
+    ${sub3}
+    <td/>
+    <td>
+    ${totalMarks}
+    <td/>
+    <td>
+    ${obtainedMarks3}
+    <td/>
+    <td>
+    ${(obtainedMarks3 / totalMarks) * 100}
+    <td/>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    ${obtainedMarks1+obtainedMarks2+obtainedMarks3}
+    </td>
+    <td>
+        ${((obtainedMarks1+obtainedMarks2+obtainedMarks3) / 300) * 100}
+    </td>
+
+    </tr>
+
+     </table>`)
+
+
+</script>
+</html>
