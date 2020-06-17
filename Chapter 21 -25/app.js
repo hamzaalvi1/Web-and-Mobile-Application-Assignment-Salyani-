@@ -58,10 +58,56 @@ let lastLetters = _userInp.slice(1,(userInp.length - 1)).toLowerCase()
 document.write(`User Input: ${_userInp} <br/>`)
 document.write(`Titlecase: ${firstCap}${lastLetters} <br/>`)
 //Task 12
+document.write(`<h2>Task 12</h2>`)
 let num = 19.07
 let numStr = num.toString().replace(".","")
 document.write(`Number: ${num} <br/>`)
 document.write(`Result: ${numStr} <br/>`)
+//Task 13
+let _userName = prompt("Enter Your User Name...")
+let splituserName = _userName.split("")
+for(let i = 0; i < splituserName.length; i++){
+    if(splituserName[i].includes("!") || splituserName[i].includes(",") || splituserName[i].includes(".") 
+|| splituserName[i].includes("@")){
+    alert(`UserName contain invalid character ${splituserName[i]}`)
+}
+}
+//Task 14
+let order = prompt("Welcome to xyz bakery what u want to order")
+const bakeryItems = ["cake","apple pie","chips","cookie","patties"]
+for(let k = 0 ; k < bakeryItems.length; k++){
+    if(bakeryItems[k].includes(order.toLowerCase())){
+       alert(`${bakeryItems[k]} is available at index ${k}`)
+    } 
+    else{
+        alert(`Item is not available`)
+    }
+}
+//Task 15
+// let password = prompt("Enter your password")
+// let splitpass = password.split("")
+// for(let p = 0 ; p < splitpass.length; p++){
+//     let character = splitpass(p)
+//     if((character >= 65 && character <= 91)
+//     || (character >= 97 && character <= 122) 
+//     || (character >= 48 && character <= 57)){
+//       alert("") 
+//     }
+// }
+//Task 16
+document.write(`<h2>Task 16</h2>`)
+let uni = "University of Karachi"
+let splitWords = uni.split("")
+for(let u = 0; u < splitWords.length; u++){
+    document.write(`<p>${splitWords[u]}</p>`)
+}
+//Task 17
+document.write(`<h2>Task 17</h2>`)
+let lastChar = "Pakistan"
+document.write(`String: ${lastChar} <br/>`)
+document.write(`last character of ${lastChar} is ${lastChar.indexOf((lastChar.length - 1))} <br/>`)
+
+
 
 
 
