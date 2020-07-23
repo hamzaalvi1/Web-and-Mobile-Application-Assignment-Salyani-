@@ -46,3 +46,33 @@ const para = document.querySelector(".read-more")
     elit. Doloribus iure a velit consectetur exercitationem 
     perspiciatis esse maiores quibusdam molestias soluta`
 })
+const students = ["Hamza Alvi","Salman Chundigar","Arham Ali","Amir Maavia","Reeja Jelani","Haya Khan","Fariha Asghar"]
+const table = document.querySelector(".table")
+const addStudents = ()=>{
+    students.forEach((student)=>{
+        const tr = document.createElement("tr")
+        const td1 = document.createElement("td")
+        const td2 = document.createElement("td")
+        const delBtn = document.createElement("button")
+        delBtn.textContent = "Delete"
+        td2.appendChild(delBtn)
+        td1.textContent = student
+        tr.append(td1,td2)
+        table.append(tr) 
+
+    })
+}
+addStudents()
+const studentList = document.querySelectorAll("tr")
+const delStudent = ()=>{
+    studentList.forEach((delStu,index)=>{
+        delStu.addEventListener("click",(e)=>{
+            if(e.target.tagName.toLowerCase() === "button"){
+                students.splice(index,1)
+                e.target.parentElement.parentElement.remove()
+
+            }
+        })
+    })
+}
+delStudent()

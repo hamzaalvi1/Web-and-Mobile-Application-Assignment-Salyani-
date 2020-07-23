@@ -48,3 +48,9 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px
 }
+table{
+    border: 1px solid black
+}
+tr ,th, td{
+    border: 1px solid black
+}
